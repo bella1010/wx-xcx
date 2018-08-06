@@ -1,0 +1,12 @@
+<view class="container">   
+    <view>			
+		<swiper class="swiper_box" >
+		<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527545825922.jpg"></image>		
+		</swiper>
+	</view>
+	<view class="shopping_container">
+		<view class="title">18LT86104SXE</view>
+		<view class="reason">2016-01-14 14:56:50</view>
+		<view class="price">￥99.99</view>
+	</view>
+</view>

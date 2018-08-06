@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/sample/sample",
+    "pages/shoppingcart/shoppingcart",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/order/order"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0eadff",
+    "navigationBarTitleText": "cecport 中电港小程序",
+    "navigationBarTextStyle":"white"
+  },
+   "tabBar": {
+    "position":"bottom",
+    "borderStyle":"white",
+    "color":"#555",
+    "selectedColor":"#0eadff",
+    "backgroundColor":"#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"images/icon_home.png",
+      "selectedIconPath":"images/icon_home_HL.png",
+      "text": "首页"
+    }, { 
+      "pagePath": "pages/sample/sample",
+      "iconPath":"images/icon_API.png",
+      "selectedIconPath":"images/icon_API_HL.png",
+      "text": "样片中心"
+    }, {
+      "pagePath": "pages/shoppingcart/shoppingcart",
+      "iconPath":"images/icon_shoppingcart.png",
+      "selectedIconPath":"images/icon_shoppingcart_HL.png",
+      "text": "购物车"
+    }, {
+      "pagePath": "pages/user/user",
+      "iconPath":"images/icon_user.png",
+      "selectedIconPath":"images/icon_user_HL.png",
+      "text": "我的"
+    }]
+  }
+}

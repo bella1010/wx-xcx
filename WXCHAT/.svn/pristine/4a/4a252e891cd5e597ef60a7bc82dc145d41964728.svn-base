@@ -1,0 +1,133 @@
+.weui-cells{
+    background: #f5f5f5
+}
+.weui-cell{
+    background: #fff;
+    margin-bottom: 10px;  
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.weui-cell::before{
+    border:0
+}
+
+.weui-form-preview__btn_default{
+    background: #f70;
+    color:#fff;
+}
+.weui-form-preview__btn_primary{
+    background: #e4393c;
+    color:#fff;
+}
+.weui-check__label
+{
+    width:96%;
+    padding:10px 2% 0 2%;
+    display: inline-block
+}
+.weui-cell-hd{
+    float:left;
+    width:100%;
+    position: relative
+}
+.weui-cell-bd{
+
+}
+.weui-form-preview__label{
+    font-size:11pt
+}
+.weui-cells__title{
+    margin: 0;
+    padding:10px 15px;
+}
+
+
+
+.proedit{
+    position: absolute;
+    top:15px;
+    right:15px;
+    font-size:10pt;
+    color: #888;
+}
+.protitle{
+    font-size:12pt;
+    font-weight: bold;
+    color: #353535;
+    position: absolute;
+    top:15px;
+    left:40px;
+}
+.mprototal{
+    font-size:12pt;
+    font-weight: bold;
+    color: #f00;
+    position: absolute;
+    top:15px;
+    right:15px;
+}
+
+
+
+.weui-check__hd_in-checkbox{
+    position: relative;
+}
+
+.weui-icon-checkbox_cancel{
+  position: absolute;
+  left: 5px;
+  top:2px
+}
+
+.Invalidlist .buynumber_c,
+.Invalidlist .mprototal{
+    display: none
+}
+.Invalidlist_hide{
+    display: none
+}
+.Invalidlist_show{
+    display: block
+}
+
+
+
+.weui-form-preview__ft{
+    position: fixed;
+    bottom:0;
+    width:100%;
+
+    background: #fff;
+    height: 50px;
+    border-bottom:1px solid #ddd;
+}
+
+.weui-form-preview__btn{
+    height:50px;
+    display:inline-block;
+    right:0;
+    flex:200px
+
+}
+
+.LinputValueB{
+    display: none
+}
+
+.weui-form-preview__ft .weui-cell{
+    padding:0 20px
+}
+.weui-form-preview__ft  .weui-icon-checkbox_circle,
+.weui-form-preview__ft  .weui-icon-checkbox_success{
+    line-height: 1.6
+}
+
+.wei-buybtn{
+    border-radius: 0;
+    margin-right: 0;
+    line-height: 2.8;
+    
+}
+button[type="primary"] {
+    background-color: #ff9c00
+}

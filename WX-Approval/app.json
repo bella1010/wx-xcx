@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/home/home",
+    "page/Pending/Pending",
+    "page/Application/Application",
+    "page/Approval/Approval",
+    "page/Bulkapproval/Bulkapproval",
+    "page/detail/detail",
+    "page/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "财务移动审批系统",
+    "navigationBarBackgroundColor": "#1fd1a1",
+    "backgroundColor": "#1fd1a1"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#0eadff",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "page/Pending/Pending",
+      "iconPath": "image/icon_hot.png",
+      "selectedIconPath": "image/icon_hot_HL.png",
+      "text": "待处理"
+    },{
+      "pagePath": "page/Application/Application",
+      "iconPath": "image/icon_motherSaid.png",
+      "selectedIconPath": "image/icon_motherSaid_HL.png",
+      "text": "我的申请"
+    },{
+      "pagePath": "page/Approval/Approval",
+      "iconPath": "image/icon_nav_form.png",
+      "selectedIconPath": "image/icon_nav_form_HL.png",
+      "text": "我的审批"
+    },
+     {
+      "pagePath": "page/Bulkapproval/Bulkapproval",
+      "iconPath": "image/icon_nav_nav.png",
+      "selectedIconPath": "image/icon_nav_nav_HL.png",
+      "text": "批量审批"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

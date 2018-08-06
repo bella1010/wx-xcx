@@ -1,0 +1,73 @@
+var app = getApp()
+Page({
+    data: {
+        navLeftItems: [],
+        navRightItems: [],
+        curNav: 5,
+		curIndex: 0
+    },
+    onLoad: function(options) {
+        var that = this
+		var cid=11;
+		if(typeof(options.cid)!='undefined'){
+			console.log(options.cid)
+			cid=options.cid;
+		}
+       // var url='http://hkm082515.oicp.net:19776/index.php/index/product?api=1&cid='+cid;
+		//var url='http://yf.cecport.com/test.php?ac=3';
+		/*var myRequest = new Request(url);
+		fetch(myRequest).then(function(response) {
+		  return response.json().then(function(res) {
+				that.setData({
+                    navLeftItems: res.category,
+                    navRightItems: res.data,
+					len: res.len,
+					curNav:cid
+                })
+		  });
+		});*/
+		/*wx.request({
+            url: url,
+            method: 'GET',
+            data: {},
+            header: {
+                'Accept': 'application/json'
+            },
+            success: function(res) {
+				that.setData({
+                    navLeftItems: res.category,
+                    navRightItems: res.data,
+					len: res.len,
+					curNav:cid
+                })
+            }
+        })*/
+		/*fetch(url,{
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json'
+			}
+			}).then(function(response){
+				if(response.status==200){
+				   return response.json();
+				}
+			}).then(function(res){				
+				that.setData({
+                    navLeftItems: res.category,
+                    navRightItems: res.data,
+					len: res.len,
+					curNav:cid
+                })
+		})*/
+    },
+    //事件处理函数
+    switchRightTab: function(e) {
+        let id = e.target.dataset.id,
+			index = parseInt(e.target.dataset.index);
+		this.setData({
+			curNav: id,
+			curIndex: index
+		})
+    }
+
+})

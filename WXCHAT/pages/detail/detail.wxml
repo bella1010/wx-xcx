@@ -1,0 +1,138 @@
+<view class="page ">
+<view class="page__bd_spacing">
+<view class="weui-form-preview page__bd_marspacing" >
+    <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label protitle">{{protitle}}</view>
+            <view class="weui-form-preview__value_in-hd mprototal">¥ {{mprototal}}</view>
+        </view>
+    </view>
+    <view class="weui-form-preview__bd" >
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">品牌</view>
+            <view class="weui-form-preview__value">{{probrandt}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">发货地</view>
+            <view class="weui-form-preview__value">{{proDP}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">预期交期</view>
+            <view class="weui-form-preview__value">{{proED}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">单价</view>
+            <view class="weui-form-preview__value proprice">¥ {{proprice}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">标准包装</view>
+            <view class="weui-form-preview__value pronumber">{{proMOQ}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">购买数量</view>
+            <view class="weui-form-preview__value ">
+                <view class="proRight pronumber"> = {{Ltolue}}</view>
+                <view class="LinputValueB proRight">
+                    {{LinputValue}} 
+                </view>
+                <view class="proRight">
+                    <button bindtap="Lreduce" class="pronumberbtn btnreduce">-</button>
+                    <input  bindinput="LbindKeyInput" value="{{LInput}}" placeholder="1"  type="number" maxlength="8" class="pronumberinput " />
+                    <button bindtap="Lplus" class="pronumberbtn btnplus">+</button>
+                </view>
+                <view class="proRight pronumber">{{proMOQ}} x </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="weui-form-preview page__bd_marspacing">
+    <view class="weui-form-preview__bd" >
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">封装</view>
+            <view class="weui-form-preview__value">SOP-8</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">类别</view>
+            <view class="weui-form-preview__value">存储器</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">产品描述</view>
+            <view class="weui-form-preview__value">{{item.prodescribe}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">标准包装</view>
+            <view class="weui-form-preview__value">7500</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">包装</view>
+            <view class="weui-form-preview__value">Tape&Reel</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">无铅情况/ROHS</view>
+            <view class="weui-form-preview__value">符合</view>
+        </view>
+    </view>
+</view>
+<view class="weui-form-preview">
+    <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label ">参数</view>
+            <view class="weui-form-preview__value_in-hd "></view>
+        </view>
+    </view>
+    <view class="weui-form-preview__bd" >
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">嵌入式</view>
+            <view class="weui-form-preview__value">No</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">漏源极电压 (Vdss)</view>
+            <view class="weui-form-preview__value">	-30V</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">电流 - 连续漏极 (Id)（25° C 时）</view>
+            <view class="weui-form-preview__value">	-2.6A</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">不同 Id、Vgs 时的 Rds On（最大值）</view>
+            <view class="weui-form-preview__value">200mΩ @2.5V</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">不同 Id 时的 Vgs(th)（最大值）</view>
+            <view class="weui-form-preview__value">-1.4V</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">漏源极电压 (Vdss)</view>
+            <view class="weui-form-preview__value">-30V</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">电流 - 连续漏极 (Id)（25° C 时）</view>
+            <view class="weui-form-preview__value">-2.6A</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">不同 Id、Vgs 时的 Rds On（最大值）</view>
+            <view class="weui-form-preview__value">200mΩ @2.5V</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">不同 Id 时的 Vgs(th)（最大值）</view>
+            <view class="weui-form-preview__value">-1.4V</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">不同 Vgs 时的栅极电荷 (Qg)</view>
+            <view class="weui-form-preview__value">2.8nC</view>
+        </view>
+    </view>
+</view>
+
+</view>
+<view class="weui-form-preview__ft">
+    <navigator class="weui-form-preview__btn weui-form-preview__btn_default" 
+    hover-class="weui-form-preview__btn_active"   >
+    加入购物车
+    </navigator>
+    <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" 
+    hover-class="weui-form-preview__btn_active"  url="../shoppingcart/shoppingcart">
+    立即购买
+    </navigator>
+</view>
+</view>

@@ -1,0 +1,83 @@
+<view class="container">
+  <view class="nav_left">
+    <navigator url="../classify/index?cid=11">
+	 <view class="nav_left_items active" data-id="11" data-index="0">传感器1</view>
+	</navigator>
+	<navigator url="../classify/index?cid=4">
+	 <view class="nav_left_items " data-id="4" data-index="1">模拟器3</view>
+	</navigator>
+	<navigator url="../classify/index?cid=3">
+	 <view class="nav_left_items " data-id="3" data-index="2">模拟器2</view>
+	</navigator>
+	<navigator url="../classify/index?cid=2">
+	 <view class="nav_left_items " data-id="2" data-index="3">传感器2</view>
+	</navigator>
+	<navigator url="../classify/index?cid=1">
+		<view class="nav_left_items " data-id="1" data-index="4">模拟器1</view>
+	</navigator>
+  </view>
+<view class="nav_right">
+	<view>
+		<view class="nav_right_items">
+			<navigator	url="../details/index?id=21">
+			<view>
+				<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527545825922.jpg"></image>
+			</view>
+				<view>
+					<text>22ISL8002AIRZ-T7A</text>
+				</view>
+			</navigator>
+		</view>
+		<view class="nav_right_items">
+			<navigator url="../details/index?id=20">
+				<view>
+					<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/150900546.jpg"></image>
+				</view>
+				<view>
+					<text>21LT86104SXE</text>
+				</view>
+			</navigator>
+		</view>
+		<view class="nav_right_items">
+			<navigator url="../details/index?id=18">
+				<view>
+				<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/150900546.jpg"></image>
+				</view>
+				<view>
+				<text>20ISL8002AIRZ-T7A</text>
+				</view>
+			</navigator>
+		</view>
+		<view class="nav_right_items">
+			<navigator url="../details/index?id=17">
+				<view>
+				<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527545825922.jpg"></image>
+				</view>
+				<view>
+				<text>19ISL8002AIRZ-T7A</text>
+				</view>
+			</navigator>
+		</view>
+		<view class="nav_right_items">
+			<navigator url="../details/index?id=14">
+			<view>
+			 <image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527545825922.jpg"></image>
+			</view>
+			<view>
+			<text>18LT86104SXE</text>
+			</view>
+			</navigator>
+		</view>
+		<view class="nav_right_items">
+			<navigator url="../details/index?id=13">
+			<view>
+			 <image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527545825922.jpg"></image>
+			</view>
+			<view>
+			<text>17ISL8002AIRZ-T7A</text>
+			</view>
+			</navigator>
+		</view>
+	</view>  
+</view>
+</view>

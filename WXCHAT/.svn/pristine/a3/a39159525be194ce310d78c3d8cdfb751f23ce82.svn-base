@@ -1,0 +1,25 @@
+/*config.js
+*
+* config.sayHello('MINA')
+* console.log(config.BaseUrl);
+*/
+
+//声明定义的全局变量
+var BaseUrl="http://localhost:9191/"; //基本url
+module.exports.BaseUrl = BaseUrl;
+var ImgUrl="http://localhost:9191//upload/"; //图片url
+module.exports.ImgUrl = ImgUrl;
+
+
+
+
+
+
+//声明定义的全局方法
+function sayHello(name) {
+  console.log(`Hello ${name} !`);
+}
+module.exports.sayHello = sayHello;
+//exports.sayGoodbye = sayGoodbye
+
+

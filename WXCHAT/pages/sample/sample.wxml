@@ -1,0 +1,121 @@
+<view class="page">
+    <view class="weui-tab">
+        <view class="weui-navbar">
+            <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+                <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                    <view class="weui-navbar__title">{{item}}</view>
+                </view>
+            </block>
+            <view class="weui-navbar__slider" style="left: 0; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+        <view class="weui-tab__panel ">
+            <view class="weui-tab__content page__bd" hidden="{{activeIndex != 0}}" >
+                 <block wx:if="{{showLoading}}">
+                    <view class="page-loading">
+                        <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+                    </view>
+                </block>
+                <block wx:else>
+                    <scroll-view style="height: 100%;" scroll-y="true" class="film-list " bindscroll="scroll">
+                        <block wx:for-items="{{films}}" wx:for-item="film" >
+
+                                <view class="" bindtap="viewDetail" data-id="{{film.id}}" data-title="{{film.protitle}}">                      
+                                    <view class="weui-flex__item"  >
+                                        <navigator url="../detail/detail">
+                                            <view class="flex_image">
+                                                <image src="{{film.images.medium}}"></image>
+                                            </view>
+                                            <view  class="protitle">{{film.protitle}}</view> 
+                                            <view  class="proprice">{{film.proprice}}</view>    
+                                        </navigator>
+                                    </view>
+                                    
+                                    
+                                </view> 
+                                
+
+                          
+                        </block>
+                        <view class="clear"></view>
+                        <view class="load-more-wrap">
+                            <block wx:if="{{hasMore}}">
+                                <block wx:if="{{loadMoreLoading}}">
+                                    <view class="load-content">
+                                    <text class="weui-loading"/><text class="loading-text">正在加载中</text>
+                                    </view>
+                                </block>
+                                <block wx:else>
+                                    <view class="btn-load-more" bindtap="loadMore">
+                                    <text>点击加载更多</text>
+                                    </view>
+                                </block>
+                            </block>
+                            <block wx:else>
+                                <view class="load-content">
+                                    <text>没有更多内容了</text>
+                                </view>
+                            </block>
+                        </view>
+                    </scroll-view>
+                </block>               
+            </view>
+
+            
+            <view class="weui-tab__content page__bd" hidden="{{activeIndex != 1}}">
+                <block wx:if="{{showLoading}}">
+                    <view class="page-loading">
+                        <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+                    </view>
+                </block>
+                <block wx:else>
+                    <scroll-view style="height: 100%;" scroll-y="true" class="film-list" bindscroll="scroll">
+                        <block wx:for-items="{{films}}" wx:for-item="film">
+                            <view class="film-item" bindtap="viewDetail" data-id="{{film.id}}" data-title="{{film.protitle}}">
+                                <view class="film-image">
+                                    <image src="{{film.images.medium}}"></image>
+                                </view>
+                                <view class="film-info">
+                                    <view  class="protitle">{{film.protitle}}
+                                    </view>
+                                    <view>
+                                        <text class="proprice">{{film.proprice}}</text>
+                                        <text class="propriceold">{{film.propriceold}}</text>
+                                    </view>
+                                    <view>
+                                        <text class="probrandT">{{film.probrandT}}</text>
+                                    </view>
+                                    <view>
+                                        <text class="prodescribe">{{film.prodescribe}}</text>
+                                    </view>
+                                    
+                                </view> 
+                            </view>
+                        </block>
+                        <view class="load-more-wrap">
+                            <block wx:if="{{hasMore}}">
+                                <block wx:if="{{loadMoreLoading}}">
+                                    <view class="load-content">
+                                    <text class="weui-loading"/><text class="loading-text">正在加载中</text>
+                                    </view>
+                                </block>
+                                <block wx:else>
+                                    <view class="btn-load-more" bindtap="loadMore">
+                                    <text>点击加载更多</text>
+                                    </view>
+                                </block>
+                            </block>
+                            <block wx:else>
+                                <view class="load-content">
+                                    <text>没有更多内容了</text>
+                                </view>
+                            </block>
+                        </view>
+                    </scroll-view>
+                </block>
+
+            </view>
+
+        </view>
+
+    </view>
+</view>

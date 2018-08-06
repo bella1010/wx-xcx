@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<view class="container">
+     <view>
+        <swiper autoplay="" class="swiper_box" duration="1000" indicator-dots="" interval="3000" current="0">
+			<swiper-item style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0%;">
+			<image class="slide-image" src="http://hkm082515.oicp.net:26182/upload/adv/20160114/14527497556357.jpg"></image>
+			</swiper-item>
+			<swiper-item style="position: absolute; width: 100%; height: 100%; top: 0px; left: 100%;">
+			<image class="slide-image" src="http://hkm082515.oicp.net:26182/upload/adv/20160114/14527497381788.jpg"></image>
+			</swiper-item>
+			<swiper-item style="position: absolute; width: 100%; height: 100%; top: 0px; left: 200%;">
+			<image class="slide-image" src="http://hkm082515.oicp.net:26182/upload/adv/20160114/14527497015081.jpg"></image>
+			</swiper-item>
+			<swiper-item style="position: absolute; width: 100%; height: 100%; top: 0px; left: 300%;">
+			<image class="slide-image" src="http://hkm082515.oicp.net:26182/upload/adv/20160114/14527496269808.jpg"></image>
+			</swiper-item>
+		</swiper>
+    </view>
+	<view class="text">
+        <view class="line_flag"></view>
+        <text>热销爆款</text>
+    </view>
+	<view class="venues_box">       
+		<view class="venues_item">
+			<navigator url="../details/index?id=14">
+			<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527545825922.jpg"></image>
+			<text>18LT86104SXE</text>
+			</navigator>
+		</view>
+		<view class="venues_item">
+			<navigator url="../details/index?id=13">
+			<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527545825922.jpg"></image>
+			<text>17ISL8002AIRZ-T7A</text>
+			</navigator>
+		</view>
+		<view class="venues_item">
+			<navigator url="../details/index?id=12">
+			<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/150900546.jpg"></image>
+			<text>06LT86104SXE</text>
+			</navigator>
+		</view>
+		<view class="venues_item">
+			<navigator url="../details/index?id=11">
+			<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527516556589.jpg"></image>
+			<text>13LT86104SXE</text>
+			</navigator>
+		</view>
+		<view class="venues_item">
+			<navigator url="../details/index?id=10">
+			<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/150900546.jpg"></image>
+			<text>12LT86104SXE</text>
+			</navigator>
+		</view>
+		<view class="venues_item">
+			<navigator url="../details/index?id=9">
+			<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527516556589.jpg"></image>
+			<text>05LT86104SXE</text>
+			</navigator>
+		</view>
+		<view class="venues_item">
+			<navigator url="../details/index?id=8">
+			<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/214527516556589.jpg"></image>
+			<text>11LT86104SXE</text>
+			</navigator>
+		</view>
+		<view class="venues_item">
+			<navigator url="../details/index?id=7">
+			<image src="http://hkm082515.oicp.net:26182/upload/product/20160114/150900546.jpg"></image>
+			<text>10LT86104SXE</text>
+			</navigator>
+		</view>
+	</view>   
+</view>

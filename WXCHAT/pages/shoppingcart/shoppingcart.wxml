@@ -1,0 +1,72 @@
+<view class="page page__bd_spacing">
+
+<view class="weui-cells__title ">交货地：国内(含增税)</view>
+<view class="weui-cells weui-cells_after-title" > 
+     <checkbox-group bindchange="checkboxChange" >
+        <label class="weui-cell weui-check__label" wx:for="{{checkboxItems}}" wx:key="{{item.value}}"  id="{{item.id}}">
+            <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" wx:if="{{!item.Invalidlist}}" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                <icon class="weui-icon-checkbox_cancel" type="cancel" size="23" bindtap="openConfirm" wx:if="{{item.Invalidlist}}"></icon>
+            </view>
+            <view class="">
+                <navigator url="../detail/detail"><view class="protitle">{{item.protitle}}</view></navigator>
+                <view class=" mprototal"> ¥{{mprototal}}</view>
+                <view class="weui-cell-bd">
+                    <view class="weui-form-preview__bd page__bd_marspacing" >                  
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">品牌</view>
+                        <view class="weui-form-preview__value">{{item.probrandt}}</view>
+                    </view> 
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">预期交期</view>
+                        <view class="weui-form-preview__value">{{item.proED}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">单价</view>
+                        <view class="weui-form-preview__value proprice">¥ {{proprice}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">标准包装</view>
+                        <view class="weui-form-preview__value pronumber"> x {{proMOQ}}</view>
+                    </view>
+                    <view class="weui-form-preview__item buynumber_c">
+                        <view class="weui-form-preview__label">购买数量</view>
+                        <view class="weui-form-preview__value pronumber">
+                                <view class="LinputValueB">
+                                    x {{LinputValue}} 
+                                </view>        
+                                <view>
+                                    <button bindtap="Lreduce" class="pronumberbtn btnreduce">-</button>
+                                    <input  bindinput="LbindKeyInput" value="{{LInput}}" placeholder="1"  type="number" maxlength="8" class="pronumberinput " />
+                                    <button bindtap="Lplus" class="pronumberbtn btnplus">+</button>
+                                </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        </label> 
+    </checkbox-group>
+    <view class="weui-form-preview__ft">
+        <view class="weui-cell__hd weui-check__hd_in-checkbox" bindchange="checkall">
+            <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+            <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+            全选
+        </view>
+        <button  type="primary" form-type="submit" class="wei-buybtn" >结算</button>
+    </view>
+
+</view>
+
+
+
+
+
+
+
+
+</view>
+
+

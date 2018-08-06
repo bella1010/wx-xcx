@@ -1,0 +1,55 @@
+.film-detail .film-info{
+    line-height: 1.2;
+}
+.film-detail .film-info view{
+  margin-bottom: 6px;
+}
+.summary{
+    padding: 0 10px;
+}
+.summary .title{
+    font-size: 16px;
+    margin: 15px 0;
+}
+.summary .content{
+    text-indent: 2em;
+}
+.collect-wish view{
+    display: inline-block;
+}
+.collect-wish view:first-child{
+    margin-right: 5px;
+}
+.collect-wish text{
+    color: #666;
+}
+
+
+.weuino{
+    background: #0eadff;
+    width:50%;
+    border: 0;
+    color: #fff;
+    border-radius: 0;
+    margin: 0;
+    text-align: center
+}
+.weuiok{
+    background: #1fd1a1;
+    width:50%;
+    border: 0;
+    color: #fff;
+    border-radius: 0;
+    margin: 0;
+    text-align: center
+}
+.tic{
+    font-weight: bold;
+    font-size: 32rpx;
+    margin-bottom: 15rpx;
+}
+.linput{
+    border: 1px solid #ddd;
+    padding:2%;
+    width:96%;
+}

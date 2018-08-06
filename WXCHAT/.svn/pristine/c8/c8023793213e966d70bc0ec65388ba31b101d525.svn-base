@@ -1,0 +1,53 @@
+var app = getApp()
+Page({
+    data: {
+        indicatorDots: true,
+        vertical: false,
+        autoplay: true,
+        interval: 3000,
+        duration: 1200,
+    },
+
+    onLoad: function(options) {
+        var that = this   		
+        // 商品详情
+        //var url='http://hkm082515.oicp.net:26182/index.php/index/detail?api=1&id=' + options.id;
+		//var url='http://yf.cecport.com/test.php?ac=2';
+		/*var myRequest = new Request(url);
+		fetch(myRequest).then(function(response) {
+		  return response.json().then(function(res) {
+				that.setData({
+					shopppingDetails: res
+                })
+		  });
+		});*/
+		/*wx.request({
+            url: url,
+            method: 'GET',
+            data: {},
+            header: {
+                'Accept': 'application/json'
+            },
+            success: function(res) {
+				that.setData({
+					shopppingDetails: res
+                })
+               
+            }
+        })*/
+		/*fetch(url,{
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json'
+			}
+			}).then(function(response){
+				if(response.status==200){
+				   return response.json();
+				}
+			}).then(function(res){
+                that.setData({
+                    shopppingDetails: res
+                })
+		})*/		
+    }
+})

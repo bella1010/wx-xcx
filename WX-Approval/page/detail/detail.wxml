@@ -1,0 +1,87 @@
+<view class="container pengding-detail" wx:for-items="{{list}}"  data-id="{{list.id}}">
+<view class="weui-form-preview page__bd_marspacing">
+    <view class="weui-cells weui-cells_after-title" >   
+        <view class="weui-cell" >                                        
+            <view class="weui-cell__bd" class="pengding-title">{{item.title}}</view>                
+        </view>
+    </view>
+    <view class="weui-form-preview__bd" >
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">出差人</view>
+            <view class="weui-form-preview__value">{{item.name}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">出差人职级</view>
+            <view class="weui-form-preview__value">{{item.Rank}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">出差人所属公司</view>
+            <view class="weui-form-preview__value">{{item.co}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">出差人所属部门</view>
+            <view class="weui-form-preview__value">{{item.department}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">出差开始时间</view>
+            <view class="weui-form-preview__value">{{item.startime}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">出差结束时间</view>
+            <view class="weui-form-preview__value">{{item.endtime}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">出差类型</view>
+            <view class="weui-form-preview__value">{{item.ctype}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">出差天数</view>
+            <view class="weui-form-preview__value">{{item.days}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">机票信息</view>
+            <view class="weui-form-preview__value">
+                <view bindtap="opentickets" class="green">详情</view> 
+            </view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">预计费用总额</view>
+            <view class="weui-form-preview__value">{{item.totalcost}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">币别</view>
+            <view class="weui-form-preview__value">{{item.currency}}</view>
+        </view>
+    </view>
+    
+</view>
+    <view class="section_gap">
+        <button type="default" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+          disabled="{{disabled}}" bindtap="primary"> 查看处理过程
+        </button>
+        <view class="space20"></view>
+        <button type="default" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+          disabled="{{disabled}}" bindtap="primary"> 查看流程走向
+        </button>
+    </view>
+    <view class="weui-form-preview__ft">
+         <button class="weuino" bindtap="modalTap2">审批不通过</button>
+         <button class="weuiok" bindtap="openAlert">审批通过</button>
+    </view>
+</view>
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange">
+    <view class="tic tc"> 航班信息 </view>
+    <view> 购票方式：网络购票 </view>
+    <view> 机票价格：¥ 2000 </view>
+    <view> 出行时间：2016/12/30 13:00:00</view>
+    <view> 折扣：¥ 200 </view>
+    <view> 供应商：中国航空 </view>
+</modal>
+
+<modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+    <view class="tic"> 审批不通过理由 </view>
+    <view>
+        <textarea bindblur="bindTextAreaBlur" auto-height class="linput" placeholder="请输入审批不通过的理由" /> 
+    </view>
+
+</modal>

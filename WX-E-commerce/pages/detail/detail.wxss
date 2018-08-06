@@ -1,0 +1,52 @@
+
+.weui-form-preview__ft{
+    position: fixed;
+    bottom:0;
+    width:100%;
+}
+.weui-form-preview__btn_default{
+    background: #f70;
+    color:#fff;
+}
+.weui-form-preview__btn_primary{
+    background: #e4393c;
+    color:#fff;
+}
+.mprototal{
+    font-size:14pt;
+    font-weight: bold;
+    color: #f00;
+}
+.proFloat{
+    float: left
+}
+.proRight{
+    float: right;
+}
+.LinputValueB{
+    display: none
+}
+.hotgoodcontainer{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+.gooditem{
+    width:33.333333%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+    box-sizing:border-box;
+    border: 0.5px solid #e2e2e3;
+    padding-bottom:10px
+}
+.productimg{
+   width:80px;
+   height:80px;
+}
+.imgview{
+  width:80px;
+  height:80px;
+}

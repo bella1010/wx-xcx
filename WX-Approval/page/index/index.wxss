@@ -1,0 +1,78 @@
+.pronumberbtn{
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    padding:0;
+    float: left;
+    border-radius: 0;
+    border:0;
+    background: #eee; 
+    color: #555555
+}
+.pronumberbtn:after{
+    border-radius: 0;
+    border:0;
+}
+.pronumberinput{
+    width:40px; 
+    height:30px;
+    padding:0;
+    background: #eee;    
+    text-align: center;
+    float: left;
+}
+.probuy text{
+    float: left;
+    margin: 20px 5px
+}
+.LInputtext{
+    color: #f00;
+}
+
+.logob{
+    transition: all 500ms ease;
+    background-color: #1fd1a1;
+    background-image: -webkit-linear-gradient(top, #1fd1a1, #1fd1a1);
+    background-image: linear-gradient(to bottom, #1fd1a1, #1fd1a1);
+    height:200rpx
+}
+
+.image{
+  width: 380rpx;
+  height:140rpx;
+}
+.button-wrapper{
+  margin-top: 50rpx; 
+  margin-bottom: 40rpx;
+}
+
+.weui_btn_primary{
+    background: #1fd1a1;
+    border-color: #1fd1a1;
+    color:#fff
+}
+.weui_btn_w{
+    background: #0eadff;
+    border-color: #0eadff;
+    color:#fff
+}
+
+
+.page__bd{
+    padding:80rpx 0;
+}
+.section,
+.btn-area{
+    text-align: left;
+    padding:0 60rpx;
+    margin: 50rpx 0 0 0;
+
+}
+.weui_tab{
+    display: none
+}
+.page wx-input {
+    border: 1rpx solid #e6e6e6;
+    border-radius: 5px;
+}
